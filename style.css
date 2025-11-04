@@ -180,6 +180,8 @@ nav ul li a:hover {
   padding: 40px 20px;
   text-align: center;
   border-bottom: 3px solid #444;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
 .hero h2 {
