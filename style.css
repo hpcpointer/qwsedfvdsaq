@@ -3,8 +3,6 @@
 /* Global background and texture */
 body {
   background-color: #0b1a36;
-  background-image: url("images/noise-texture.png");
-  background-blend-mode: multiply;
   color: #eaeaea;
 }
 
