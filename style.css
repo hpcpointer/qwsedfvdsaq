@@ -1,196 +1,108 @@
-/* Base Styles */
+/* ---------------- GRUNGY + CONNECTED UPGRADE ---------------- */
+
+/* Global background and texture */
 body {
-  font-family: 'Georgia', serif;
-  margin: 0;
-  background: linear-gradient(to bottom, #f4f4f4 0%, #ffffff 40%, #eef0f5 100%);
-  color: #222;
+  background-color: #0b1a36;
+  background-image: url("images/noise-texture.png");
+  background-blend-mode: multiply;
+  color: #eaeaea;
 }
 
-/* Navigation */
-.navbar {
-  background: #0b1a36;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 5vw;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #ffcc00;
-}
-
-.logo {
-  font-weight: 800;
-  font-size: 1.4rem;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Hero */
-.hero {
-  background: linear-gradient(rgba(11,26,54,0.8), rgba(11,26,54,0.8)),
-              url('images/hero-bg.jpg') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.btn {
-  background: #ffcc00;
-  color: #0b1a36;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 700;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #ffd84d;
-}
-
-/* Section Divider */
-.section-divider {
-  height: 40px;
-  background: linear-gradient(to right, #0b1a36, #2d3e60);
-  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
-}
-
-/* Featured Section */
-.featured {
-  padding: 60px 5vw;
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+/* Section unification */
+section, .content, .featured {
+  background: rgba(12, 22, 44, 0.8);
+  backdrop-filter: blur(2px);
   border-radius: 12px;
-  text-align: center;
+  padding: 40px 5vw;
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-.featured h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-}
-
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
-}
-
-.featured-grid article {
-  background: #f9f9f9;
-  border-radius: 12px;
-  padding: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.featured-grid article:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
-
-.featured-grid img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-/* Section Content */
-.content {
-  padding: 50px 5vw;
-  background: #ffffff;
-  margin-bottom: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-h3::after {
-  content: '';
+/* Connective transitions between sections */
+section::before {
+  content: "";
   display: block;
-  width: 80px;
-  height: 4px;
-  background: #0b1a36;
-  margin: 10px auto 0;
-  border-radius: 2px;
+  height: 50px;
+  background: linear-gradient(to bottom, transparent, rgba(11, 26, 54, 0.9));
+  margin: -40px 0 40px 0;
 }
 
-/* Spotlight Section */
-.spotlight {
-  text-align: center;
-  padding: 60px 5vw;
-  background: #f8f9fc;
+/* Grungy divider style */
+.featured, .hero, .content {
+  border-top: 2px solid rgba(255,255,255,0.05);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
 }
 
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+/* Hero section - darker, more connected */
+.hero {
+  background: linear-gradient(180deg, rgba(10,20,40,0.95), rgba(15,25,50,0.8));
+  color: #f5f5f5;
+  border-bottom: 4px solid #ffcc00;
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.4);
 }
 
-.photo-grid img {
-  width: 100%;
-  border-radius: 12px;
-  transition: transform 0.3s;
+/* Headings - newspaper meets grit */
+h1, h2, h3, h4 {
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffcc00;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
 }
 
-.photo-grid img:hover {
-  transform: scale(1.05);
+/* Body text */
+p, li {
+  color: #d7d7d7;
+  line-height: 1.6;
 }
 
-/* Social Feed */
-.social-feed {
-  background: linear-gradient(90deg, #e1306c, #f77737, #ffdc80);
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  padding: 15px;
-  letter-spacing: 0.5px;
+/* Articles - textured cards */
+article {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  padding: 25px;
+  transition: 0.3s ease;
+}
+article:hover {
+  transform: scale(1.01);
+  background: rgba(255,255,255,0.08);
 }
 
-.ig-link {
-  color: white;
+/* Links */
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+a:hover {
   text-decoration: underline;
+}
+
+/* Navigation - dark and tight */
+nav {
+  background: #0b1a36;
+  border-top: 2px solid #2d3e60;
+  border-bottom: 2px solid #2d3e60;
+  padding: 10px 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+nav ul li a {
+  color: #ffcc00;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #fff;
 }
 
 /* Footer */
 footer {
-  background: linear-gradient(180deg, #1a2b4f 0%, #0b1a36 100%);
-  color: #ddd;
-  text-align: center;
-  padding: 30px 10px;
+  background: #0b1a36;
+  color: #999;
+  border-top: 3px solid #ffcc00;
   font-size: 0.9rem;
-  box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 30px;
 }
+
