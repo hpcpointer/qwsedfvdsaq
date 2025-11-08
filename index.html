@@ -3,166 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Pointer</title>
+  <title>The Pointer – Student Newspaper</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Georgia&display=swap" rel="stylesheet">
 </head>
-<body>
 
-  <!-- Header with Banner -->
+<body>
+  <!-- Navigation -->
   <header>
-    <div class="banner-container">
-      <img src="images/241214_Building.png" alt="The Pointer Banner" class="header-banner">
-      <h1 class="banner-title">The Pointer</h1>
-    </div>
-    <nav>
+    <nav class="navbar">
+      <div class="logo">🦬 The Pointer</div>
       <ul>
         <li><a href="#news">News</a></li>
         <li><a href="#opinions">Opinions</a></li>
         <li><a href="#sports">Sports</a></li>
-        <li><a href="#arts">Arts & Entertainment</a></li>
-        <li><a href="#lifestyle">Student Lifestyle</a></li>
+        <li><a href="#arts">Arts</a></li>
+        <li><a href="#lifestyle">Lifestyle</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Instagram Section -->
-  <section class="social-feed">
-    <a href="https://www.instagram.com/hpcpointer?igsh=MWx0cm1xdHc1NGVlMA==" target="_blank" class="ig-link" rel="noopener noreferrer">
-      <img src="images/Instagram_icon.png" alt="Instagram icon" width="24" height="24" />
-      Connect With Us @ ThePointerHPC
-    </a>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your School. Your Stories.</h1>
+      <p>The student voice of our community – made by students, for students.</p>
+      <a href="#featured" class="btn">Read the Latest</a>
+    </div>
   </section>
 
-  <!-- Main Content -->
-  <main>
-    <!-- This Week -->
-    <section class="hero">
-      <h1><strong>Bison News</strong></h1> 
-      <h2>Main Event's Name</h2>
-      <p><strong>Replacement Hero Sections</strong></p>
-      <p>Description</p>
-    </section>
+  <div class="section-divider"></div>
 
-    <section class="featured">
-      <div class="featured-item">
-        <h3>Editor's Picks</h3>
-        <ul>
-          <li><a href="#news">Top News Story</a></li>
-          <li><a href="#opinions">Featured Opinion</a></li>
-          <li><a href="#sports">Sports Highlight</a></li>
-        </ul>
-      </div>
-
-      <div class="featured-item">
-        <h3>Upcoming Events</h3>
-        <ul>
-          <li><strong>Trunk or Treat</strong> — Oct 28, 5:30PM to 7:30PM @ the back teacher lot</li>
-          <li><strong>HPC Talent Show Rehearsals</strong> — November through January</li>
-          <li><strong>Gathering Of The Herd Fall Festival</strong> — Oct 28, 5:30PM to 7:30PM @ HPC</li>
-        </ul>
-      </div>
-    </section>
-
-    <div class="content">
-      <section id="news">
-        <h3>News</h3>
-        <article>
-          <h4>EVENT</h4>
-          <p>Description</p>
-        </article>
-      </section>
-
-      <section id="opinions">
-        <h3>Opinions</h3>
-        <article class="interview">
-          <h4>EVENT</h4>
-          <p>Description</p>
-        </article>
-      </section>
-
-      <section id="sports">
-        <h3>Sports</h3>
-        <article>
-          <h4>EVENT</h4>
-          <p>Description</p>
-        </article>
-        <article>
-          <h4>Event</h4>
-          <p>Description</p>
-        </article>
-      </section>
-
-      <section id="lifestyle">
-        <h3>Student Lifestyle</h3>
-        <article>
-          <h4>EVENT</h4>
-          <p>Description</p>
-        </article>
-      </section>
+  <!-- Featured Section -->
+  <section id="featured" class="featured">
+    <h2>🔥 Featured This Week</h2>
+    <div class="featured-grid">
+      <article>
+        <img src="images/feature1.jpg" alt="Homecoming Game">
+        <h3>Homecoming Game Recap</h3>
+        <p>A thrilling night of school spirit, touchdowns, and victory.</p>
+      </article>
+      <article>
+        <img src="images/feature2.jpg" alt="New Cafeteria Menu">
+        <h3>The New Cafeteria Menu Review</h3>
+        <p>Is it really better? We taste-tested so you don’t have to.</p>
+      </article>
+      <article>
+        <img src="images/feature3.jpg" alt="Student Spotlight">
+        <h3>Student Spotlight: Meet Our Robotics Team</h3>
+        <p>Behind the bots – a look into creativity, teamwork, and innovation.</p>
+      </article>
     </div>
+  </section>
 
-    <!-- Last Week -->
+  <div class="section-divider"></div>
 
-      <h1><strong>Last Week's Bison News</strong></h1> 
-      <h2>Main Event's Name</h2>
-      <p><strong>Replacement Hero Sections</strong></p>
-      <p>Description</p>
+  <!-- Categories -->
+  <section id="news" class="content">
+    <h3>🗞️ News</h3>
+    <p>Breaking stories and updates from around the school.</p>
+  </section>
 
+  <section id="opinions" class="content">
+    <h3>💬 Opinions</h3>
+    <p>Student perspectives on school life and beyond.</p>
+  </section>
 
-    <section class="featured">
-      <div class="featured-item">
-        <h3>Editor's Picks</h3>
-        <ul>
-          <li><a href="#news2">Top News Story</a></li>
-          <li><a href="#opinions2">Featured Opinion</a></li>
-          <li><a href="#sports2">Sports Highlight</a></li>
-        </ul>
-      </div>
-    </section>
+  <section id="sports" class="content">
+    <h3>🏅 Sports</h3>
+    <p>Coverage, highlights, and behind-the-scenes moments from our athletes.</p>
+  </section>
 
-    <div class="content">
-      <section id="news2">
-        <h3>News</h3>
-        <article>
-          <h4>EVENT</h4>
-          <p>Description</p>
-        </article>
-      </section>
+  <section id="arts" class="content">
+    <h3>🎨 Arts & Entertainment</h3>
+    <p>From music and drama to digital design – creativity lives here.</p>
+  </section>
 
-      <section id="opinions2">
-        <h3>Opinions</h3>
-        <article class="interview">
-          <h4>EVENT</h4>
-          <p>Description</p>
-        </article>
-      </section>
+  <section id="lifestyle" class="content">
+    <h3>🌿 Lifestyle</h3>
+    <p>Tips, trends, and stories from student life.</p>
+  </section>
 
-      <section id="sports2">
-        <h3>Sports</h3>
-        <article>
-          <h4>EVENT</h4>
-          <p>Description</p>
-        </article>
-        <article>
-          <h4>Event</h4>
-          <p>Description</p>
-        </article>
-      </section>
+  <div class="section-divider"></div>
 
-      <section id="lifestyle2">
-        <h3>Student Lifestyle</h3>
-        <article>
-          <h4>EVENT</h4>
-          <p>Description</p>
-        </article>
-      </section>
+  <!-- Photo Section -->
+  <section class="spotlight">
+    <h2>This Week in Photos</h2>
+    <div class="photo-grid">
+      <img src="images/photo1.jpg" alt="Spirit Day">
+      <img src="images/photo2.jpg" alt="Football Game">
+      <img src="images/photo3.jpg" alt="Art Exhibit">
     </div>
-  </main>
+  </section>
+
+  <!-- Instagram Section -->
+  <section class="social-feed">
+    <p>Follow us on Instagram → 
+      <a class="ig-link" href="https://instagram.com/thepointer" target="_blank">@thepointer</a>
+    </p>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 The Pointer. All rights reserved.</p>
+    <p>© 2025 The Pointer | Designed and published by the Student Newspaper Team</p>
   </footer>
-
 </body>
 </html>
